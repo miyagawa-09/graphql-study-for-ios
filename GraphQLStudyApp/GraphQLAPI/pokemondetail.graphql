@@ -1,0 +1,14 @@
+query GetPokemonDetail($id: String) {
+  pokemon(id: $id) {
+    id
+    number
+    name
+    types
+    weaknesses
+    image
+    evolutions {
+      id
+      name
+    }
+  }
+}

@@ -1,0 +1,499 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D04AAC0243AB5A90003A3F5 /* PokemonListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D04AABF243AB5A90003A3F5 /* PokemonListItem.swift */; };
+		1D4294C424376F9A003C6439 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4294C324376F9A003C6439 /* AppDelegate.swift */; };
+		1D4294C624376F9A003C6439 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4294C524376F9A003C6439 /* SceneDelegate.swift */; };
+		1D4294C824376F9A003C6439 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4294C724376F9A003C6439 /* ViewController.swift */; };
+		1D4294CB24376F9A003C6439 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D4294C924376F9A003C6439 /* Main.storyboard */; };
+		1D4294CD24376F9B003C6439 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D4294CC24376F9B003C6439 /* Assets.xcassets */; };
+		1D4294D024376F9B003C6439 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D4294CE24376F9B003C6439 /* LaunchScreen.storyboard */; };
+		1DAD25B2243935B000437122 /* PokemonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAD25B1243935B000437122 /* PokemonDetailViewController.swift */; };
+		1DAD25B724393CC800437122 /* PokemonItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAD25B524393CC800437122 /* PokemonItemCell.swift */; };
+		1DAD25B824393CC800437122 /* PokemonItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DAD25B624393CC800437122 /* PokemonItemCell.xib */; };
+		1DD1024A243AD92C00F12794 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD10249243AD92C00F12794 /* Presenter.swift */; };
+		1DD1024E243ADE6C00F12794 /* QLPokemonListAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD1024C243ADE6C00F12794 /* QLPokemonListAPI.swift */; };
+		1DD1024F243ADE6C00F12794 /* pokemonlist.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 1DD1024D243ADE6C00F12794 /* pokemonlist.graphql */; };
+		1DD10251243B241400F12794 /* PokemonDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DD10250243B241400F12794 /* PokemonDetail.storyboard */; };
+		1DD10253243B2FA000F12794 /* PokemonDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD10252243B2FA000F12794 /* PokemonDetailPresenter.swift */; };
+		1DD10255243B456600F12794 /* pokemondetail.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 1DD10254243B456600F12794 /* pokemondetail.graphql */; };
+		1DD10257243B470300F12794 /* QLPokemonDetailAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD10256243B470300F12794 /* QLPokemonDetailAPI.swift */; };
+		63307E665A0476481445FBB2 /* Pods_GraphQLStudyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E59CD15570C59CB216052D22 /* Pods_GraphQLStudyApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D04AABF243AB5A90003A3F5 /* PokemonListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonListItem.swift; sourceTree = "<group>"; };
+		1D4294C024376F9A003C6439 /* GraphQLStudyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GraphQLStudyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D4294C324376F9A003C6439 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1D4294C524376F9A003C6439 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1D4294C724376F9A003C6439 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1D4294CA24376F9A003C6439 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1D4294CC24376F9B003C6439 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1D4294CF24376F9B003C6439 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1D4294D124376F9B003C6439 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DAD25B1243935B000437122 /* PokemonDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailViewController.swift; sourceTree = "<group>"; };
+		1DAD25B524393CC800437122 /* PokemonItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonItemCell.swift; sourceTree = "<group>"; };
+		1DAD25B624393CC800437122 /* PokemonItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PokemonItemCell.xib; sourceTree = "<group>"; };
+		1DD10249243AD92C00F12794 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		1DD1024C243ADE6C00F12794 /* QLPokemonListAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QLPokemonListAPI.swift; sourceTree = "<group>"; };
+		1DD1024D243ADE6C00F12794 /* pokemonlist.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pokemonlist.graphql; sourceTree = "<group>"; };
+		1DD10250243B241400F12794 /* PokemonDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PokemonDetail.storyboard; sourceTree = "<group>"; };
+		1DD10252243B2FA000F12794 /* PokemonDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailPresenter.swift; sourceTree = "<group>"; };
+		1DD10254243B456600F12794 /* pokemondetail.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pokemondetail.graphql; sourceTree = "<group>"; };
+		1DD10256243B470300F12794 /* QLPokemonDetailAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QLPokemonDetailAPI.swift; sourceTree = "<group>"; };
+		25F099355E8D55F63F43DCA3 /* Pods-GraphQLStudyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GraphQLStudyApp.release.xcconfig"; path = "Target Support Files/Pods-GraphQLStudyApp/Pods-GraphQLStudyApp.release.xcconfig"; sourceTree = "<group>"; };
+		B79FB91D7020D50075365989 /* Pods-GraphQLStudyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GraphQLStudyApp.debug.xcconfig"; path = "Target Support Files/Pods-GraphQLStudyApp/Pods-GraphQLStudyApp.debug.xcconfig"; sourceTree = "<group>"; };
+		E59CD15570C59CB216052D22 /* Pods_GraphQLStudyApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GraphQLStudyApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D4294BD24376F9A003C6439 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63307E665A0476481445FBB2 /* Pods_GraphQLStudyApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D403093243AD12F00A0E855 /* PokemonList */ = {
+			isa = PBXGroup;
+			children = (
+				1D4294C724376F9A003C6439 /* ViewController.swift */,
+				1DD10249243AD92C00F12794 /* Presenter.swift */,
+				1D4294C924376F9A003C6439 /* Main.storyboard */,
+			);
+			path = PokemonList;
+			sourceTree = "<group>";
+		};
+		1D4294B724376F9A003C6439 = {
+			isa = PBXGroup;
+			children = (
+				1D4294C224376F9A003C6439 /* GraphQLStudyApp */,
+				1D4294C124376F9A003C6439 /* Products */,
+				FEA648BA61C68467D60A3435 /* Pods */,
+				7A4BA0A725D63F5852FDCF86 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1D4294C124376F9A003C6439 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D4294C024376F9A003C6439 /* GraphQLStudyApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1D4294C224376F9A003C6439 /* GraphQLStudyApp */ = {
+			isa = PBXGroup;
+			children = (
+				1DD1024B243ADAE900F12794 /* GraphQLAPI */,
+				1D403093243AD12F00A0E855 /* PokemonList */,
+				1DAD25AE2439354000437122 /* PokemonDetail */,
+				1D4294C324376F9A003C6439 /* AppDelegate.swift */,
+				1D4294C524376F9A003C6439 /* SceneDelegate.swift */,
+				1D4294CC24376F9B003C6439 /* Assets.xcassets */,
+				1D4294CE24376F9B003C6439 /* LaunchScreen.storyboard */,
+				1D4294D124376F9B003C6439 /* Info.plist */,
+				1D04AABF243AB5A90003A3F5 /* PokemonListItem.swift */,
+				1DAD25B524393CC800437122 /* PokemonItemCell.swift */,
+				1DAD25B624393CC800437122 /* PokemonItemCell.xib */,
+			);
+			path = GraphQLStudyApp;
+			sourceTree = "<group>";
+		};
+		1DAD25AE2439354000437122 /* PokemonDetail */ = {
+			isa = PBXGroup;
+			children = (
+				1DAD25B1243935B000437122 /* PokemonDetailViewController.swift */,
+				1DD10252243B2FA000F12794 /* PokemonDetailPresenter.swift */,
+				1DD10250243B241400F12794 /* PokemonDetail.storyboard */,
+			);
+			path = PokemonDetail;
+			sourceTree = "<group>";
+		};
+		1DD1024B243ADAE900F12794 /* GraphQLAPI */ = {
+			isa = PBXGroup;
+			children = (
+				1DD10256243B470300F12794 /* QLPokemonDetailAPI.swift */,
+				1DD1024C243ADE6C00F12794 /* QLPokemonListAPI.swift */,
+				1DD10254243B456600F12794 /* pokemondetail.graphql */,
+				1DD1024D243ADE6C00F12794 /* pokemonlist.graphql */,
+			);
+			path = GraphQLAPI;
+			sourceTree = "<group>";
+		};
+		7A4BA0A725D63F5852FDCF86 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E59CD15570C59CB216052D22 /* Pods_GraphQLStudyApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FEA648BA61C68467D60A3435 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B79FB91D7020D50075365989 /* Pods-GraphQLStudyApp.debug.xcconfig */,
+				25F099355E8D55F63F43DCA3 /* Pods-GraphQLStudyApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D4294BF24376F9A003C6439 /* GraphQLStudyApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D4294D424376F9B003C6439 /* Build configuration list for PBXNativeTarget "GraphQLStudyApp" */;
+			buildPhases = (
+				CCAF537F72BE4E01F826A981 /* [CP] Check Pods Manifest.lock */,
+				1D0C22532437EA5B00C5FE1F /* ShellScript */,
+				1D4294BC24376F9A003C6439 /* Sources */,
+				1D4294BD24376F9A003C6439 /* Frameworks */,
+				1D4294BE24376F9A003C6439 /* Resources */,
+				92736FD0E76FC88C100E1D11 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GraphQLStudyApp;
+			productName = GraphQLStudyApp;
+			productReference = 1D4294C024376F9A003C6439 /* GraphQLStudyApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1D4294B824376F9A003C6439 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Masataka Miyagawa";
+				TargetAttributes = {
+					1D4294BF24376F9A003C6439 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+				};
+			};
+			buildConfigurationList = 1D4294BB24376F9A003C6439 /* Build configuration list for PBXProject "GraphQLStudyApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1D4294B724376F9A003C6439;
+			productRefGroup = 1D4294C124376F9A003C6439 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D4294BF24376F9A003C6439 /* GraphQLStudyApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D4294BE24376F9A003C6439 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D4294D024376F9B003C6439 /* LaunchScreen.storyboard in Resources */,
+				1D4294CD24376F9B003C6439 /* Assets.xcassets in Resources */,
+				1DD1024F243ADE6C00F12794 /* pokemonlist.graphql in Resources */,
+				1DAD25B824393CC800437122 /* PokemonItemCell.xib in Resources */,
+				1D4294CB24376F9A003C6439 /* Main.storyboard in Resources */,
+				1DD10255243B456600F12794 /* pokemondetail.graphql in Resources */,
+				1DD10251243B241400F12794 /* PokemonDetail.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D0C22532437EA5B00C5FE1F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"${SRCROOT}\"\n\nSCRIPT_PATH=\"${PODS_ROOT}/Apollo/scripts\"\ncd \"${SRCROOT}/${TARGET_NAME}\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./GraphQLAPI/pokemonlist.graphql --localSchemaFile=\"schema.json\" ./GraphQLAPI/QLPokemonListAPI.swift\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./GraphQLAPI/pokemondetail.graphql --localSchemaFile=\"schema.json\" ./GraphQLAPI/QLPokemonDetailAPI.swift\n";
+		};
+		92736FD0E76FC88C100E1D11 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GraphQLStudyApp/Pods-GraphQLStudyApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GraphQLStudyApp/Pods-GraphQLStudyApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GraphQLStudyApp/Pods-GraphQLStudyApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCAF537F72BE4E01F826A981 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GraphQLStudyApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D4294BC24376F9A003C6439 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D04AAC0243AB5A90003A3F5 /* PokemonListItem.swift in Sources */,
+				1D4294C424376F9A003C6439 /* AppDelegate.swift in Sources */,
+				1DAD25B724393CC800437122 /* PokemonItemCell.swift in Sources */,
+				1DD1024E243ADE6C00F12794 /* QLPokemonListAPI.swift in Sources */,
+				1D4294C624376F9A003C6439 /* SceneDelegate.swift in Sources */,
+				1D4294C824376F9A003C6439 /* ViewController.swift in Sources */,
+				1DD1024A243AD92C00F12794 /* Presenter.swift in Sources */,
+				1DAD25B2243935B000437122 /* PokemonDetailViewController.swift in Sources */,
+				1DD10257243B470300F12794 /* QLPokemonDetailAPI.swift in Sources */,
+				1DD10253243B2FA000F12794 /* PokemonDetailPresenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1D4294C924376F9A003C6439 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D4294CA24376F9A003C6439 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1D4294CE24376F9B003C6439 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D4294CF24376F9B003C6439 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1D4294D224376F9B003C6439 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1D4294D324376F9B003C6439 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1D4294D524376F9B003C6439 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B79FB91D7020D50075365989 /* Pods-GraphQLStudyApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GraphQLStudyApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.upward.GraphQLStudyApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		1D4294D624376F9B003C6439 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25F099355E8D55F63F43DCA3 /* Pods-GraphQLStudyApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GraphQLStudyApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.upward.GraphQLStudyApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D4294BB24376F9A003C6439 /* Build configuration list for PBXProject "GraphQLStudyApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D4294D224376F9B003C6439 /* Debug */,
+				1D4294D324376F9B003C6439 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D4294D424376F9B003C6439 /* Build configuration list for PBXNativeTarget "GraphQLStudyApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D4294D524376F9B003C6439 /* Debug */,
+				1D4294D624376F9B003C6439 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1D4294B824376F9A003C6439 /* Project object */;
+}
